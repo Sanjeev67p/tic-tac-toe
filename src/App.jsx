@@ -1,9 +1,9 @@
-import './App.css'
+import './Styles.scss'
 import Board from './components/Board'
 
 function App() {
   return (
-  <div>
+  <div className='app'>
    
   <Board />        
   </div>
