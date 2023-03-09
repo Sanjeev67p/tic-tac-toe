@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const Board = () => {
     const [squares, setSquares] = useState(Array(9).fill(null));
-    
+    console.log(squares);
     const handleSquareClick = (clickedPosition) => {
         setSquares((currentSquares) =>{
             return currentSquares.map((squareValue, position) =>{
@@ -18,7 +18,8 @@ const Board = () => {
     const renderSquare = (position) => {
         return(
             <Square 
-                value = {squares[position]} onclick = {() => handleSquareClick(position)}
+                value = {squares[position]} 
+                onclick = {() => handleSquareClick(position)}
             /> 
         )
     }
