@@ -33,8 +33,7 @@ function App() {
 
   return (
   <div className='app'>
-  
-  <StatusMessage />
+  <StatusMessage winner = {winner}  isXNext = {isXNext} squares = {squares} />
   <Board squares = {squares} handleSquareClick = {handleSquareClick} />        
   </div>
   )
