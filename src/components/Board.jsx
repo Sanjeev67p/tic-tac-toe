@@ -5,7 +5,7 @@ const Board = () => {
     const [squares, setSquares] = useState(Array(9).fill(null));
     console.log(squares);
     const handleSquareClick = (clickedPosition) => {
-        setSquares((currentSquares) =>{
+        setSquares((currentSquares) => {
             return currentSquares.map((squareValue, position) =>{
                 if(clickedPosition === position){
                     return "X";
