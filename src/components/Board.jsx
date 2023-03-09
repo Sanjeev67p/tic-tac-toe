@@ -19,7 +19,7 @@ const Board = () => {
         return(
             <Square 
                 value = {squares[position]} 
-                onclick = {() => handleSquareClick(position)}
+                onClick = {() => handleSquareClick(position)}
             /> 
         )
     }
