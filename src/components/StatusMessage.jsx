@@ -8,15 +8,15 @@ const renderStatusMessage = () =>{
     }
     else{
     if(winner){
-        return <div>Winner is {winner}</div>
+        return <div>Winner is <span className={winner === 0 ? "text-orange" : "text-green"}>{winner}</span></div>
     }
 
     if(!winner && noMovesLeft){
-        return <div> X and 0 tied!</div>
+        return <div> <span className="text-green">X</span> and <span className="text-orange">0</span> tied!</div>
     }
 
     if(!winner && !noMovesLeft){
-        return <div>Next Player is {nextPlayer}</div>
+        return <div>Next Player is <span className= {isXNext? "text-green" :"text-orange" }>{nextPlayer}</span></div>
     }
     return null;
 }

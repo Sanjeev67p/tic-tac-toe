@@ -10,11 +10,8 @@ function App() {
     const [isXNext, setIsXNext] = useState(false);
     
     console.log(squares);
-    // const nextPlayer = isXNext ? 'X' : '0'
     const winner = calculateWinner(squares);
-    // const statusMessage = winner ? `Winner is ${winner}`: `Next Player is ${nextPlayer}`;
-
-    const handleSquareClick = (clickedPosition) => {
+        const handleSquareClick = (clickedPosition) => {
 
         if(squares[clickedPosition] || winner){
             return;
