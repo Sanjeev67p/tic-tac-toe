@@ -8,7 +8,7 @@ const Board = () => {
         setSquares(currentSquares => {
             return currentSquares.map((squareValue, position) =>{
                 if(clickedPosition === position){
-                    return "X";
+                    return 'X';
                 }
             return squareValue;
             });    
