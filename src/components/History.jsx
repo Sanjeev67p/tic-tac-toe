@@ -4,7 +4,7 @@ const History = ({history, moveTo, currentMove}) => {
             <ul className="history">
                 {history.map((_, index) =>( 
             <li key={index}>
-            <button type="button" className={`btn-move  ${currentMove ===index?  'active' : '' }`} onClick={() => moveTo(index)}>{index === 0 ? 'New Game' : `Go to move #${index}`}</button>
+            <button type="button" className={`btn-move  ${currentMove ===index?  'active' : '' }`} onClick={() => moveTo(index)}>{index === 0 ? 'Go to the Start' : `Go to move #${index}`}</button>
             </li>
             ))}                
             </ul>
