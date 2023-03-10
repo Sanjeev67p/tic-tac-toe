@@ -46,10 +46,11 @@ function App() {
     }
   return (
   <div className='app'>
+  <h1><span className='text-orange'>TIC</span> TAC <span className='text-green'>TOE</span></h1>
   <StatusMessage winner = {winner} gamingBoard = {gamingBoard} />
   <Board squares = {gamingBoard.squares} handleSquareClick = {handleSquareClick} winningSquares = {winningSquares} /> 
   <button type='button' className={`btn-reset ${winner ? 'active' : ''}`} onClick={onNewGameStart}> Start New Game</button>
-  <h3>Current Game History</h3>
+  <h3 style={{fontWeight: 'normal'}}>Current Game History</h3>
   <History history = {history} moveTo = {moveTo} currentMove = {currentMove} />       
   </div>
   )

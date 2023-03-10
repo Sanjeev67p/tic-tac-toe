@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy" : "npm run build && surge dist tictact0e.surge.sh"
   },
   "dependencies": {
     "react": "^18.2.0",
