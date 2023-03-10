@@ -1,7 +1,7 @@
 //const Square= function Square (){
-const Square = ({value, onClick}) =>{
+const Square = ({value, onClick, isWinningSquare}) =>{
     return(
-    <button type="button" className="square" onClick={onClick}>
+    <button type="button" className={`square ${value === 'X' ? 'text-green' : 'text-orange'} ${ isWinningSquare ? 'winning' : ''}` } onClick={onClick}>
         {value}
     </button>
     )
